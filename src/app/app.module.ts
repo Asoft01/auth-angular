@@ -4,7 +4,7 @@ import { MockBackend } from '@angular/http/testing';
 import { fakeBackendProvider } from './helpers/fake-backend';
 import { AuthService } from './services/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, Http, BaseRequestOptions } from '@angular/http';
 import { RouterModule } from '@angular/router'; 
@@ -42,7 +42,7 @@ import { NoAccessComponent } from './no-access/no-access.component';
     OrderService,
 
     AuthService,
-
+    
     // For creating a mock back-end. You don't need these in a real app. 
     fakeBackendProvider,
     MockBackend,
