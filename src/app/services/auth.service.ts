@@ -54,7 +54,6 @@ export class AuthService {
     // return jwtHelper.decodeToken(token);
 
     return new JwtHelper().decodeToken(token);
-
   }
 }
 
